@@ -511,3 +511,145 @@ By enforcing pre-event constraints on system trajectories, it prevents irreversi
 without relying on human feedback, interpretation, or post-hoc correction. 
 Safety is defined geometrically — as non-reachability of forbidden states — making the framework 
 domain-agnostic, falsifiable, and compatible with established safety-critical engineering practice.
+
+
+# LICENSE
+
+## The Morrison Stack™ Mathematical Framework  
+**Constraint-Based Governance & Pre-Event Safety**
+
+© 2026 Davarn Morrison. All rights reserved.
+
+---
+
+## 1. Scope of Work
+
+This repository contains the **Morrison Stack™ mathematical framework**, including but not limited to:
+
+- Constraint-based governance equations  
+- Forbidden region Ω  
+- State-space boundary B = ∂Ω  
+- Transition map T(s, a)  
+- Reachability and irreversibility formulations  
+- Pre-event safety invariants  
+- Any diagrams, graphs, proofs, simulations, or implementations derived from these equations  
+
+This protection applies to the **structure, logic, and functional intent** of the mathematics — not merely the symbols or notation.
+
+Re-labeling variables, altering notation, or translating the framework into code **does not constitute originality**.
+
+---
+
+## 2. License Type
+
+### Morrison Stack™ Restricted Research License (MS-RRL-1.0)
+
+This is **not an open-source license**.
+
+This license permits **reading, citation, and non-operational research discussion only**.
+
+---
+
+## 3. Permitted Uses
+
+You MAY:
+
+- Read and study the framework
+- Cite the work in academic, technical, or research contexts **with attribution**
+- Discuss the framework conceptually or theoretically
+- Include unchanged diagrams or excerpts for educational purposes
+- Reference the work as prior art
+
+**Required citation:**
+
+> Morrison, D. (2026). *The Morrison Stack™: Constraint-Based Governance and Pre-Event Safety.*
+
+---
+
+## 4. Prohibited Uses (Without Explicit Written Permission)
+
+You may NOT:
+
+- Implement the equations in production systems
+- Use the framework in AI safety tooling, governance layers, or runtime enforcement
+- Deploy the equations in AI, robotics, medical, financial, or governmental systems
+- Embed the framework into commercial products or services
+- Train models using the equations as operational logic
+- Publish derivative works that preserve functional equivalence
+- Represent the framework as “open”, “standard”, or “community-owned”
+- Claim safety guarantees derived from this framework
+
+This restriction applies regardless of implementation language, system scale, or domain.
+
+---
+
+## 5. Derivative Works Clause
+
+Any work that:
+
+- Enforces pre-event action constraints  
+- Implements irreversibility-aware state transitions  
+- Preserves the forbidden-region / boundary logic  
+- Uses constraint geometry to bound intelligence execution  
+
+is considered a **derivative work**, even if:
+
+- Variable names differ
+- Notation is changed
+- The framework is embedded inside a larger system
+- The implementation is partial or approximate
+
+Derivative works require **explicit written licensing** from the author.
+
+---
+
+## 6. No Patent Grant
+
+This license does **not** grant:
+
+- Patent rights
+- Implied patent licenses
+- Freedom to operate
+
+All patent rights, if any, remain exclusively with the author.
+
+---
+
+## 7. No Warranty / No Liability
+
+This work is provided **“as is”**, without warranty of any kind.
+
+The author assumes **no liability** for misuse, misinterpretation, unsafe deployment, or downstream consequences.
+
+---
+
+## 8. Attribution Requirement
+
+Any permitted use must include the following notice:
+
+> The Morrison Stack™ mathematical framework was developed by Davarn Morrison and is used under restricted research license.
+
+---
+
+## 9. Enforcement & Priority Notice
+
+Public disclosure of this repository establishes:
+
+- Authorship precedence  
+- Prior art  
+- Date of conception  
+
+Unauthorized commercial or operational use constitutes **copyright infringement**.
+
+---
+
+## 10. Licensing & Permissions
+
+For commercial, operational, or governmental licensing inquiries, contact:
+
+**Davarn Morrison**  
+Founder, The AGI Alignment Epoch™
+
+Permission **must be obtained before implementation**.
+
+---
