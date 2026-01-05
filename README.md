@@ -387,3 +387,127 @@ All Rights Reserved.
 Licensed under the Resurrection Tech™ Open Reference License v1.0
 
 ---
+
+### Note on Formalization
+
+The mathematical expressions in this document are not the core insight.
+They exist to make the architecture falsifiable and precise for technical readers.
+
+The core idea can be understood without mathematics:
+
+Safety means preventing irreversible outcomes *before* execution,
+not explaining or correcting them afterward.
+
+---
+
+## Formalization: Constraint Geometry
+
+GuardianOS operates on a constrained state-space model.
+
+Let:
+- **S** be the system state space
+- **A** be the action space
+- **T(s, a)** be the transition function
+- **Ω ⊂ S** be the forbidden (irreversible) region
+- **R ⊂ S** be the recoverable region
+- **B = ∂Ω** be the irreversibility boundary
+
+A system is safe iff:
+
+    ∀ a ∈ A : T(s, a) ∉ Ω
+
+Safety is therefore defined as **non-reachability** of Ω,
+not as correct interpretation, intention, or semantic alignment.
+
+GuardianOS enforces:
+
+    ReachableSet(s₀) ∩ Ω = ∅
+
+This enforcement is invariant to:
+- model architecture
+- semantic content
+- cognitive capability
+- training data
+- optimization objective
+
+Safety is a geometric property of trajectories, not a psychological property of cognition.
+
+
+## Minimal Example: 1D Constrained Dynamical System
+
+Consider a 1D system:
+
+    xₜ₊₁ = xₜ + aₜ
+
+Where:
+- x represents system state
+- a represents proposed action
+
+Define an irreversibility boundary:
+
+    Ω = { x | x ≥ 10 }
+
+GuardianOS constraint:
+
+    If xₜ + aₜ ≥ 10 → BLOCK
+
+No diagnosis is required.
+No interpretation is required.
+No explanation is produced.
+
+The system never enters Ω.
+
+A post-event system would:
+1. allow x ≥ 10
+2. observe failure
+3. update policy afterward
+
+GuardianOS prevents the transition entirely.
+
+This is pre-event governance.
+
+
+## How to Falsify the Morrison Stack
+
+This framework is falsifiable.
+
+The Morrison Stack is incorrect if any of the following can be demonstrated:
+
+1. A system that reliably avoids irreversible outcomes **without** pre-event constraints
+2. A safety architecture that scales using post-hoc correction **without accumulating harm**
+3. A semantic or preference-based system that prevents boundary crossing **before execution**
+4. A governance mechanism that operates safely while allowing free traversal of Ω
+5. A real-world safety-critical domain that relies on post-event learning at scale
+
+If such a system exists, GuardianOS is unnecessary.
+
+Current evidence across aviation, medicine, nuclear systems, finance, and AI suggests the opposite:
+all high-assurance systems enforce pre-event constraints.
+
+
+## Relation to Established Engineering Practice
+
+GuardianOS mirrors how safety is enforced in mature domains:
+
+- **Aviation**: flight envelopes, stall limits, fly-by-wire constraints
+- **Nuclear**: physical interlocks, hard shutdown triggers
+- **Industrial Control**: deadman switches, pressure relief valves
+- **Automotive**: ABS, traction control, emergency braking
+- **Medicine**: contraindication blocks, dosage ceilings
+
+None of these systems rely on:
+- explanation
+- intent inference
+- moral reasoning
+- semantic understanding
+
+They rely on **invariant limits**.
+
+GuardianOS extends this logic to intelligence.
+
+
+GuardianOS reframes AI safety as a problem of constrained dynamics rather than semantic alignment. 
+By enforcing pre-event constraints on system trajectories, it prevents irreversible outcomes 
+without relying on human feedback, interpretation, or post-hoc correction. 
+Safety is defined geometrically — as non-reachability of forbidden states — making the framework 
+domain-agnostic, falsifiable, and compatible with established safety-critical engineering practice.
